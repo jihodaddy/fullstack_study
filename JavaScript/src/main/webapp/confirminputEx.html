@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트</title>
+		<script type="text/javascript">
+			var isStudent = confirm("당신은 학생입니까?")
+			/*  if(confirm("당신은 학생입니까?")){ 로 진행해도 됨. */
+			/*	  if(isStudent){    
+					document.write("결과: 학생입니다.<br>할인율:50%");		
+				}else{
+					document.write("결과: 학생이 아닙니다.<br>할인율:0%");
+				}	*/
+				if(isStudent == true){
+					result = "학생입니다.";
+					discount = "50%";
+					}else{
+						result = "학생이 아닙니다.";		/* 변수사용 */
+						discount = "없음";
+					}
+			
+					document.write("결과: " + result + "<br>");
+					document.write("할인율: "+discount);
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
