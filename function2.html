@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 함수 예제</title>
+		<script type="text/javascript">
+			
+		function start(){
+			var answer = confirm("배경색을 벼경하시겠습니까?");
+			if(answer)
+				changeColor();
+			else
+				alert("취소하였습니다.")
+		}
+		function changeColor(){
+			var color = prompt("색상입력", "red, yellow, green");
+			document.bgcolor= color;
+			
+		}
+		start();
+		
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
