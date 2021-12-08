@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 함수 연습문제2</title>
+		<script type="text/javascript">
+			var num;	
+
+			function input(){
+				num = prompt("숫자입력");
+				show();	
+			}
+			
+			function show(){			
+				for(var i = 1; i<= num; i++){
+					//document.write('★');  //버튼 없어짐(새문서)
+					document.body.innerHTML += "★"; //버튼 유지하면서 "★" 출력
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="input()"> 숫자입력 </button>
+	</body>
+</html>
