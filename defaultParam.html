@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 디폴트 매개변수</title>
+		<script type="text/javascript">
+			function rect(width=10, height=20){
+				document.write("width : " + width+", ");
+				document.write("height: " + height+ "<br>");
+				return width * height;
+			}
+			
+			document.write(rect()+"<br>");
+			document.write(rect(30)+"<br>");
+			document.write(rect(100,200)+"<br>");
+			
+			document.write("<hr>");
+			
+			function showInfo(name, year=4, score){
+				document.write("name : " + name + "<br>");	 
+				document.write("year: " + year+ "<br>");	
+				document.write("score: " + score+ "<br>");	
+			}
+			
+			/* document.write(showInfo());
+			document.write(showInfo("홍길동"));
+			document.write(showInfo("홍길동", 80)); */
+			
+			/* console.log(showInfo());
+			console.log(showInfo("홍길동"));
+			console.log(showInfo("홍길동", 80)); */
+			
+			showInfo();         
+			showInfo("홍길동");    
+			showInfo("홍길동", 80);	//80이 두번째 year 로 전달
+			
+			document.write("<hr>");
+			
+			function showInfo(name, score, year=4){
+				document.write("name : " + name + "<br>");	 
+				document.write("year: " + year+ "<br>");
+				document.write("score: " + score+ "<br>");
+			}
+			
+			showInfo();         
+			showInfo("홍길동");    
+			showInfo("홍길동", 80);
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

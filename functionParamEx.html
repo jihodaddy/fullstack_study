@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 매개변수함수 연습문제</title>
+		<script type="text/javascript">
+			//매개변수가 있는 함수
+			function makeTable(column, row){
+				document.write('<table border="1">');
+				for(let i=1; i <= column; i++){
+					document.write("<tr>");
+					for(let j=1; j <= row; j++){
+						document.write("<td>★</td>");
+					}
+					document.write("</tr>");
+				}
+				document.write("</table>");
+			}
+		
+			function input(){
+				var column = parseInt(prompt("테이블의 행수 입력"));
+				var row = parseInt(prompt("테이블의 열수 입력"));
+				makeTable(column, row);
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="input()">테이블 만들기</button>
+	</body>
+</html>
