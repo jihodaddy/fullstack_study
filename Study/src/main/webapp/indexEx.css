@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    list-style: none;
+    border:1px solid #000;
+}
+
+.wrap{
+  	width: 1080px;
+    height: 100%;
+    padding: 0 20px;
+}
+ 
+a{
+	width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+li{
+    float: left;
+}
+
+header{
+	width:100%;
+	height:130px;
+	line-height: 65px;
+	display: flex;
+}
+.logo{
+	overflow: auto;
+}
+.outerMenu{
+	padding: 20px;
+	float: left;
+	display:inline-block;
+}
+
+.sideMenu{
+	float: right;
+}
+
+nav{
+	height:70px;
+	background: lightgray;
+}
